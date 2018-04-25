@@ -10,7 +10,7 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
-require 'net/http'
+
 # require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
@@ -18,20 +18,6 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-
-
-notifier = Slack::Notifier.new "https://hooks.slack.com/services/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"
-module Client
-  def self.post uri, params={}
-    Net::HTTP.post_form uri, params
-  end
-end
-
-notifier = Slack::Notifier.new 'https://hooks.slack.com/services/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' do
-  http_client Client
-end
-
-notifier.post text: "hello", http_client: Client
 
 module CommentsApi
   class Application < Rails::Application
