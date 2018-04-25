@@ -4,10 +4,8 @@ one:
   fname: MyString
   lname: MyString
   subject: MyString
-  thumbnail: MyString
 
 two:
   fname: MyString
   lname: MyString
   subject: MyString
-  thumbnail: MyString

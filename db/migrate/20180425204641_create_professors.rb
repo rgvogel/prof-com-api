@@ -4,7 +4,6 @@ class CreateProfessors < ActiveRecord::Migration[5.2]
       t.string :fname
       t.string :lname
       t.string :subject
-      t.string :thumbnail
 
       t.timestamps
     end

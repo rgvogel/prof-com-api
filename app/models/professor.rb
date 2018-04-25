@@ -1,3 +1,3 @@
 class Professor < ApplicationRecord
-  has_many :coments
+  has_many :comments
 end

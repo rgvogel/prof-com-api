@@ -2,10 +2,10 @@
 
 one:
   title: MyString
-  message: MyText
   student: MyString
+  message: MyText
 
 two:
   title: MyString
-  message: MyText
   student: MyString
+  message: MyText

@@ -10,23 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_24_213739) do
+ActiveRecord::Schema.define(version: 2018_04_25_204755) do
 
-  create_table "coments", force: :cascade do |t|
+  create_table "comments", force: :cascade do |t|
     t.string "title"
     t.string "student"
     t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "professor_id"
-    t.index ["professor_id"], name: "index_coments_on_professor_id"
+    t.index ["professor_id"], name: "index_comments_on_professor_id"
   end
 
   create_table "professors", force: :cascade do |t|
     t.string "fname"
     t.string "lname"
     t.string "subject"
-    t.string "thumbnail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,6 +1,6 @@
-class CreateComents < ActiveRecord::Migration[5.2]
+class CreateComments < ActiveRecord::Migration[5.2]
   def change
-    create_table :coments do |t|
+    create_table :comments do |t|
       t.string :title
       t.string :student
       t.text :message
